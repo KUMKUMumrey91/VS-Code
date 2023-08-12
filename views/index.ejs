@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    vs code
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="nav">
+      <div id="prt1">
+        <img src="https://code.visualstudio.com/opengraphimg/opengraph-blog.png" alt="">
+        <h6>file</h6>
+        <h6>edit</h6>
+        <h6>selection</h6>
+        <h6>view</h6>
+        <h6>go</h6>
+        <h6>run</h6>
+        <h6>terminal</h6>
+        <h6>help</h6>
+      </div>
+      <div id="prt2">
+        <h6>VS-Code Visual Studio Code</h6>
+      </div>
+      <div id="prt3">
+        <h6>-</h6>
+        <h6>◻</h6>
+        <h6>×</h6>
+      </div>
+    </div>
+    <div id="screen">
+      <div id="pt1">
+        <div id="top">
+          <i class="ri-checkbox-multiple-blank-line"></i>
+          <i class="ri-search-line"></i>
+          <i class="ri-git-branch-line"></i>
+          <i class="ri-function-line"></i>
+        </div>
+        <div id="bottom">
+          <i class="ri-account-circle-fill"></i>
+          <i class="ri-settings-5-line"></i>
+        </div>
+      </div>
+      <div id="pt2">
+        <h5>explorer</h5> <br>
+        <div id="elem">
+          <h6><i class="ri-arrow-down-s-line"></i> VS-Code</h6>
+          <div id="icon">
+            <i id="fileicon" class="ri-file-line"></i>
+            <i id="foldericon" class="ri-folder-add-line"></i>
+            <i class="ri-restart-line"></i>
+          </div>
+        </div>
+        <div id="files">
+          <form id="fileform" action="/createfile">
+            <input type="text" name="fileform" placeholder="file name">
+          </form>
+          <form id="folderform" action="/createfolder">
+            <input type="text" name="folderform" placeholder="folder name">
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="pt3">
+      <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/visual_studio_code_logo_icon_144754.png" alt="">
+    </div>
+  </div>
+  </div>
+
+  <script>
+
+    function donoOffKaro() {
+      document.querySelectorAll("#files form")
+        .forEach(function (frm) {
+          frm.style.display = "none";
+        })
+    }
+    donoOffKaro();
+
+    document.querySelector("#fileicon")
+      .addEventListener("click", function () {
+        donoOffKaro();
+        document.querySelector("#fileform").style.display = "block";
+      });
+
+    document.querySelector("#foldericon")
+      .addEventListener("click", function () {
+        donoOffKaro();
+        document.querySelector("#folderform").style.display = "block";
+      });
+
+  </script>
+
+</body>
+
+</html>

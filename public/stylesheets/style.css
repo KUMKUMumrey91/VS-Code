@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 5%;
+  width: 100%;
+  background-color: rgb(44 44 50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+#prt1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #f47676; */
+  width: 30%;
+}
+
+#prt1 img {
+  height: 36px;
+}
+
+#nav h6 {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  /* background-color: #c56464; */
+  padding: 7px 8px;
+  border-radius: 2px;
+  transition: all linear 0.1s;
+  cursor: pointer;
+}
+
+#nav h6:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+#prt2 {
+  margin-right: 15%;
+}
+
+#prt3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 7%;
+
+}
+
+#screen {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#pt1 {
+  height: 100%;
+  width: 4%;
+  background-color: rgb(44 44 50);
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+padding-left: 10px;
+}
+
+#top{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20%;
+}
+
+#bottom{
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20%;
+}
+#pt1 i {
+  color: rgba(255, 255, 255, 0.701);
+  font-size: 25px;
+  font-weight: 100;
+  cursor: pointer;
+  transform: all linear 0.2s;
+}
+
+#pt1 i:hover {
+ color: white;
+}
+#pt2 {
+  height: 100%;
+  width: 10%;
+  background-color: rgb(44 44 50);
+  padding: 5px 3px;
+}
+
+#pt2 h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+#elem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#elem h6{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+#elem #icon{
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+#pt3 {
+  height: 100%;
+  width: 86%;
+  background: rgb(78, 77, 77);
+}
+
+#pt3 img {
+  height: 240px;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+
+}
